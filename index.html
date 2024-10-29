@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            color: blue;
+        }
+        h1{
+            font-size: 80px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            height: 100vh;
+        }
+        .row{
+            display: flex;
+        }
+        .col{
+            display: flex;
+            height:100px;
+            width:100px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            font-size: 110px;
+        }
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+        <div class="row">
+            <div onclick="handle(this)" id="0" class="col"></div>
+            <div onclick="handle(this)" id="1" class="col"></div>
+            <div onclick="handle(this)" id="2" class="col"></div>
+        </div>
+        <div class="row">
+            <div onclick="handle(this)" id="3" class="col"></div>
+            <div onclick="handle(this)" id="4" class="col"></div>
+            <div onclick="handle(this)" id="5" class="col"></div>
+        </div>
+        <div class="row">
+            <div onclick="handle(this)" id="6" class="col"></div>
+            <div onclick="handle(this)" id="7" class="col"></div>
+            <div onclick="handle(this)" id="8" class="col"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
